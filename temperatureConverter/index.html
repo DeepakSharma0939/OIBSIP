@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftContainer">
+        <h1>Temperature Converter</h1>
+        <p>Degree</p>
+        <div class="inputContainer">
+            <input
+          type="number"
+          id="temperatureInput"
+          placeholder="Enter temperature"
+        />
+        <select id="fromUnit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+        </div>
+        
+        <p>Convert in</p>
+        <select id="toUnit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+        <button onclick="convertTemperature()">Convert</button>
+      </div>
+      <div class="rightContainer">
+        <h2 id="result">0</h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
